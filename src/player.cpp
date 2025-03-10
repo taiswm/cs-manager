@@ -13,7 +13,7 @@ Player::Player(std::string name, std::string nationality, int age, int aim, int 
         rating = ((aim * 2) + entry + firepower + clutching + gamesense + (utility * 0.5) + (positioning * 0.5)) / 7;
     }
 
-    void Player::displayInfo() {
+    void Player::displayInfo() const {
         std::cout << "Player: " << name << " (" << nationality << "), Age: " << age << std::endl;
         std::cout << "Rating: " << rating << "/100" << std::endl;
         std::cout << "Aim: " << aim << ", Entry: " << entry << ", Firepower: " << firepower << std::endl;

@@ -24,7 +24,7 @@ public:
 
     Player(std::string name, std::string nationality, int age, int aim, int entry, int firepower, int clutching, int gamesense, int utility, int positioning);
 
-    void displayInfo();
+    void displayInfo() const;
 
     std::string getName() const;
     std::string getNationality() const;
